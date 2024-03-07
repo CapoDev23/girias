@@ -112,6 +112,10 @@ header{
     height: 100%;
     display: flex;
     flex-direction: column;
+    overflow-y: scroll;
+}
+.i-content table tbody::-webkit-scrollbar{
+    display: none;
 }
 
 .i-content table tbody tr {
