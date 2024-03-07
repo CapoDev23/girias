@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+
+html;*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    user-select: none;
+    height: 100vh;
+    overflow: hidden;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+:root{
+    --perano-50: #f0f6fd;
+    --perano-100: #e4effb;
+    --perano-200: #cfe1f6;
+    --perano-300: #b1cdf0;
+    --perano-400: #9fbaea;
+    --perano-500: #7794dd;
+    --perano-600: #5d75ce;
+    --perano-700: #4d61b5;
+    --perano-800: #405193;
+    --perano-900: #3a4875;
+    --perano-950: #222944;    
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--perano-600);
+}
+.logo img{
+    width: 90px;
+}
+/*main*/
+
+.container{
+    background: linear-gradient(35deg, var(--perano-600), var(--perano-800));
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.insights{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: auto;
+    height: 85px;
+}
+.insights li{
+    background-color: #e4effb;
+    width: 195px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: #222944 1px 1px 12px 1px;
+    font-size: 20px;
+}
+
+.i-content{
+    background-color: #f0f6fd;
+    width: 97%;
+    margin-top: 15px;
+    height: 75vh;
+    padding: 20px;
+    border-radius: 25px;
+}
+.i-content table {
+    background-color: rgb(243, 211, 153);
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    border-collapse: collapse;
+}
+
+.i-content table thead {
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.i-content table thead tr {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.i-content table tbody {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.i-content table tbody tr {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 5px;
+    background-color: #f5e4aec4;
+    border-radius: 10px;
+}
+
+.i-content table th,
+.i-content table td {
+    text-align: center;
+    padding: 8px;
+    flex: 1;
+}
+
